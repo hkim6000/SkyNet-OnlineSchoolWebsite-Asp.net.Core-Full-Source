@@ -1,0 +1,165 @@
+[
+  {
+    "id": "E-AVA001",
+    "studentId": "s-ava",
+    "courseId": "light-and-composition",
+    "orderId": "BP-A3K9QX",
+    "started": "2026-10-18T03:27:19Z",
+    "status": "active",
+    "lockedOn": null,
+    "completed": [
+      "l1"
+    ],
+    "quizzes": [],
+    "last": "l1"
+  },
+  {
+    "id": "E-BEN001",
+    "studentId": "s-ben",
+    "courseId": "weeknight-cooking-basics",
+    "orderId": "BP-B8M4TN",
+    "started": "2026-10-01T03:27:19Z",
+    "status": "active",
+    "lockedOn": null,
+    "completed": [
+      "l1",
+      "l2"
+    ],
+    "quizzes": [],
+    "last": "l2"
+  },
+  {
+    "id": "E-CHL001",
+    "studentId": "s-chloe",
+    "courseId": "spreadsheets-from-scratch",
+    "orderId": "BP-C5R2VD",
+    "started": "2026-09-21T03:27:19Z",
+    "status": "active",
+    "lockedOn": null,
+    "completed": [
+      "l1",
+      "l2",
+      "l3",
+      "l4",
+      "l5",
+      "l6"
+    ],
+    "quizzes": [
+      {
+        "quizId": "q-spreadsheets-from-scratch-1",
+        "best": 100,
+        "attempts": 1,
+        "passed": true,
+        "when": "2026-09-22T03:27:19Z"
+      },
+      {
+        "quizId": "q-spreadsheets-from-scratch-2",
+        "best": 100,
+        "attempts": 1,
+        "passed": true,
+        "when": "2026-09-22T03:27:19Z"
+      }
+    ],
+    "last": "l6"
+  },
+  {
+    "id": "E-DEV001",
+    "studentId": "s-dev",
+    "courseId": "drawing-foundations",
+    "orderId": "BP-D2X7LE",
+    "started": "2026-10-11T03:27:19Z",
+    "status": "locked",
+    "lockedOn": "2026-10-19T03:27:19Z",
+    "completed": [
+      "l1",
+      "l2",
+      "l3",
+      "l4",
+      "l5",
+      "l6"
+    ],
+    "quizzes": [
+      {
+        "quizId": "q-drawing-foundations-1",
+        "best": 100,
+        "attempts": 1,
+        "passed": true,
+        "when": "2026-10-12T03:27:19Z"
+      }
+    ],
+    "last": "l6"
+  },
+  {
+    "id": "E-ELI001",
+    "studentId": "s-eli",
+    "courseId": "bread-and-baking-at-home",
+    "orderId": "BP-E6P1HU",
+    "started": "2026-10-15T03:27:19Z",
+    "status": "active",
+    "lockedOn": null,
+    "completed": [
+      "l1",
+      "l2",
+      "l3"
+    ],
+    "quizzes": [],
+    "last": "l3"
+  },
+  {
+    "id": "E-FAY001",
+    "studentId": "s-fay",
+    "courseId": "portraits-by-window-light",
+    "orderId": "BP-F9W3JB",
+    "started": "2026-09-10T03:27:19Z",
+    "status": "active",
+    "lockedOn": null,
+    "completed": [
+      "l1",
+      "l2",
+      "l3",
+      "l4"
+    ],
+    "quizzes": [],
+    "last": "l4"
+  },
+  {
+    "id": "E-AVA002",
+    "studentId": "s-ava",
+    "courseId": "spreadsheets-from-scratch",
+    "orderId": "BP-G4H8SC",
+    "started": "2026-10-06T03:27:19Z",
+    "status": "active",
+    "lockedOn": null,
+    "completed": [],
+    "quizzes": [],
+    "last": "l1"
+  },
+  {
+    "id": "E-CHL002",
+    "studentId": "s-chloe",
+    "courseId": "light-and-composition",
+    "orderId": "BP-K8L1ZG",
+    "started": "2026-10-16T03:27:19Z",
+    "status": "active",
+    "lockedOn": null,
+    "completed": [
+      "l1",
+      "l2",
+      "l3"
+    ],
+    "quizzes": [],
+    "last": "l3"
+  },
+  {
+    "id": "E-5N4GEP",
+    "studentId": "s-ava",
+    "courseId": "portraits-by-window-light",
+    "orderId": "BP-8JXBGV",
+    "started": "2026-10-21T04:14:22.7275249Z",
+    "status": "active",
+    "lockedOn": null,
+    "completed": [],
+    "quizzes": [],
+    "last": ""
+  }
+]

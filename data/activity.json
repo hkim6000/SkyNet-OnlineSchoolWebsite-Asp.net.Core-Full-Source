@@ -1,0 +1,128 @@
+[
+  {
+    "when": "2026-10-21T04:22:53.0689326Z",
+    "userId": "u-demo",
+    "action": "sign in",
+    "target": "demo",
+    "ok": true
+  },
+  {
+    "when": "2026-10-21T04:14:34.0601967Z",
+    "userId": "u-demo",
+    "action": "sign in",
+    "target": "demo",
+    "ok": true
+  },
+  {
+    "when": "2026-10-21T04:14:22.7398574Z",
+    "userId": "s-ava",
+    "action": "order paid",
+    "target": "BP-8JXBGV \u00B7 Ava Lindqvist \u00B7 Portraits by Window Light",
+    "ok": true
+  },
+  {
+    "when": "2026-10-21T04:14:18.0433756Z",
+    "userId": "s-ava",
+    "action": "order created",
+    "target": "BP-8JXBGV \u00B7 Portraits by Window Light",
+    "ok": true
+  },
+  {
+    "when": "2026-10-21T04:14:01.0624008Z",
+    "userId": "s-ava",
+    "action": "sign in",
+    "target": "ava@example.com",
+    "ok": true
+  },
+  {
+    "when": "2026-10-20T03:27:19Z",
+    "userId": "s-ava",
+    "action": "refund requested",
+    "target": "BP-A3K9QX \u00B7 eligible",
+    "ok": true
+  },
+  {
+    "when": "2026-10-20T08:27:19Z",
+    "userId": "s-ben",
+    "action": "refund requested",
+    "target": "BP-B8M4TN \u00B7 outside policy",
+    "ok": true
+  },
+  {
+    "when": "2026-10-19T17:27:19Z",
+    "userId": "stripe",
+    "action": "refund synced",
+    "target": "BP-K8L1ZG \u00B7 $10.00 (access stays)",
+    "ok": true
+  },
+  {
+    "when": "2026-10-18T12:27:19Z",
+    "userId": "u-jamal",
+    "action": "refund approved (full)",
+    "target": "BP-D2X7LE \u00B7 $45.00",
+    "ok": true
+  },
+  {
+    "when": "2026-10-19T03:27:19Z",
+    "userId": "u-jamal",
+    "action": "access ended",
+    "target": "BP-D2X7LE \u00B7 Drawing Foundations",
+    "ok": true
+  },
+  {
+    "when": "2026-10-19T00:27:19Z",
+    "userId": "u-jamal",
+    "action": "certificate revoked",
+    "target": "BP-D2X7LE \u00B7 Drawing Foundations",
+    "ok": true
+  },
+  {
+    "when": "2026-10-19T16:27:19Z",
+    "userId": "u-omar",
+    "action": "refund approved (full)",
+    "target": "RR-7HM2ZP",
+    "ok": false
+  },
+  {
+    "when": "2026-10-17T18:27:19Z",
+    "userId": "u-jamal",
+    "action": "refund approved (partial)",
+    "target": "BP-E6P1HU \u00B7 $20.00",
+    "ok": true
+  },
+  {
+    "when": "2026-10-12T20:27:19Z",
+    "userId": "u-jamal",
+    "action": "refund declined",
+    "target": "BP-F9W3JB \u00B7 Fay Okonkwo",
+    "ok": true
+  },
+  {
+    "when": "2026-10-15T02:27:19Z",
+    "userId": "u-nina",
+    "action": "save page",
+    "target": "Home",
+    "ok": true
+  },
+  {
+    "when": "2026-10-13T20:27:19Z",
+    "userId": "u-nina",
+    "action": "upload media",
+    "target": "2 files",
+    "ok": true
+  },
+  {
+    "when": "2026-10-16T09:27:19Z",
+    "userId": "s-eli",
+    "action": "refund requested",
+    "target": "BP-E6P1HU \u00B7 outside policy",
+    "ok": true
+  },
+  {
+    "when": "2026-08-27T01:27:19Z",
+    "userId": "s-chloe",
+    "action": "sign up",
+    "target": "Chloe Mbeki",
+    "ok": true
+  }
+]

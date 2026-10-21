@@ -1,0 +1,30 @@
+<div class="mc-site" data-page="MyCourses" id="mc-site-root">
+<header class="mc-head" id="mc-head">
+    <div class="mc-head-row">
+        <button type="button" class="mc-burger" aria-label="Menu" onclick="MyCoursesJs.openNav()"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+        <a class="mc-logo" href="Home" aria-label="Brightpath Academy home"><svg viewBox="0 0 40 40" width="36" height="36" aria-hidden="true"><rect width="40" height="40" rx="10" fill="#1F2A37"/><path d="M8 28a12 12 0 0 1 24 0" fill="#F6D77A"/><path d="M13 28a7 7 0 0 1 14 0" fill="#C2540A"/><path d="M6 30h28" stroke="#FBF7EF" stroke-width="2.4" stroke-linecap="round"/></svg><span>Brightpath<span class="mc-logo-x"> Academy</span></span></a>
+        <nav class="mc-nav" id="mc-nav" aria-label="Main">
+            <div class="mc-nav-top"><b>Menu</b><button type="button" class="mc-ibtn" aria-label="Close" onclick="MyCoursesJs.closeNav()"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+            <ul class="mc-menu"><li><a class="mc-ml" href="Courses">Courses</a></li><li><a class="mc-ml" href="Instructors">Instructors</a></li><li><a class="mc-ml" href="About">About</a></li><li><a class="mc-ml" href="Faq">FAQ</a></li><li><a class="mc-ml" href="Verify">Certificate</a></li><li><a class="mc-ml" href="Contact">Contact</a></li></ul>
+        </nav>
+        <a class="mc-acct" id="mc-acct" href="Join">Sign in</a>
+    </div>
+    <div class="mc-scrim" id="mc-scrim" onclick="MyCoursesJs.closeNav()"></div>
+</header>
+<main class="mc-main" id="mc-main">
+<div class="mc-narrow">
+    <div class="mc-toprow"><a href="Account">My account</a><button type="button" class="mc-link" onclick="MyCoursesJs.signout()">Sign out</button></div>
+    <div id="mc-body"><div class="mc-loading">Loading your courses</div></div>
+</div>
+</main>
+<footer class="mc-foot">
+    <div class="mc-foot-in">
+        <div class="mc-fbrand"><a class="mc-logo" href="Home"><svg viewBox="0 0 40 40" width="36" height="36" aria-hidden="true"><rect width="40" height="40" rx="10" fill="#1F2A37"/><path d="M8 28a12 12 0 0 1 24 0" fill="#F6D77A"/><path d="M13 28a7 7 0 0 1 14 0" fill="#C2540A"/><path d="M6 30h28" stroke="#FBF7EF" stroke-width="2.4" stroke-linecap="round"/></svg><span>Brightpath Academy</span></a><p>Practical skills courses in photography, spreadsheets, home cooking and drawing.</p></div>
+        <div class="mc-fcol"><b>Learn</b><a href="Courses">Course catalog</a><a href="Instructors">Instructors</a><a href="Verify">Verify a certificate</a></div>
+        <div class="mc-fcol"><b>School</b><a href="About">About</a><a href="Faq">FAQ</a><a href="Policy">Terms and refunds</a></div>
+        <div class="mc-fcol"><b>Help</b><a href="Contact">Contact us</a><a href="MyCourses">My courses</a><a href="Account">My account</a><a href="AdminLogin">Staff sign in</a></div>
+    </div>
+    <div class="mc-foot-b">&copy; 2026 Brightpath Academy. Sample school for the OnlineSchool template.</div>
+</footer>
+<div class="mc-toast" id="mc-toast" role="status" aria-live="polite"></div>
+</div>

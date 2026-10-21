@@ -1,0 +1,72 @@
+<div class="jn-site" data-page="Join" id="jn-site-root">
+<header class="jn-head" id="jn-head">
+    <div class="jn-head-row">
+        <button type="button" class="jn-burger" aria-label="Menu" onclick="JoinJs.openNav()"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+        <a class="jn-logo" href="Home" aria-label="Brightpath Academy home"><svg viewBox="0 0 40 40" width="36" height="36" aria-hidden="true"><rect width="40" height="40" rx="10" fill="#1F2A37"/><path d="M8 28a12 12 0 0 1 24 0" fill="#F6D77A"/><path d="M13 28a7 7 0 0 1 14 0" fill="#C2540A"/><path d="M6 30h28" stroke="#FBF7EF" stroke-width="2.4" stroke-linecap="round"/></svg><span>Brightpath<span class="jn-logo-x"> Academy</span></span></a>
+        <nav class="jn-nav" id="jn-nav" aria-label="Main">
+            <div class="jn-nav-top"><b>Menu</b><button type="button" class="jn-ibtn" aria-label="Close" onclick="JoinJs.closeNav()"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+            <ul class="jn-menu"><li><a class="jn-ml" href="Courses">Courses</a></li><li><a class="jn-ml" href="Instructors">Instructors</a></li><li><a class="jn-ml" href="About">About</a></li><li><a class="jn-ml" href="Faq">FAQ</a></li><li><a class="jn-ml" href="Verify">Certificate</a></li><li><a class="jn-ml" href="Contact">Contact</a></li></ul>
+        </nav>
+        <a class="jn-acct" id="jn-acct" href="Join">Sign in</a>
+    </div>
+    <div class="jn-scrim" id="jn-scrim" onclick="JoinJs.closeNav()"></div>
+</header>
+<main class="jn-main" id="jn-main">
+<section class="jn-wrap jn-sec">
+<div class="jn-gate-h">
+    <p class="jn-eyebrow">Sign in</p>
+    <h1>Who is signing in?</h1>
+    <p class="jn-hint">Students and staff have separate accounts. Choose yours.</p>
+</div>
+<div class="jn-gates">
+<div class="jn-card jn-panel jn-gate">
+    <div class="jn-gate-t"><span class="jn-gate-i" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c3 2 9 2 12 0v-5"/></svg></span><div><b>Students</b><small>Your courses, progress, certificates and orders</small></div></div>
+    <div class="jn-tabs" role="tablist"><button type="button" class="jn-tab jn-act" id="jn-tab-in" role="tab" aria-selected="true" onclick="JoinJs.mode('in')">Sign in</button><button type="button" class="jn-tab" id="jn-tab-new" role="tab" aria-selected="false" onclick="JoinJs.mode('new')">Create account</button></div>
+    <form id="jn-form-in" class="jn-form" onsubmit="return JoinJs.signIn()" novalidate>
+        <h2>Welcome back</h2>
+        <p class="jn-hint">Sign in to open your courses.</p>
+        {plhd_demo}
+        <div class="jn-field"><span>Email</span><input type="email" id="jn-email" value="{plhd_semail}" maxlength="80" autocomplete="email"><em class="jn-err" id="jn-e-email"></em></div>
+        <div class="jn-field"><span>Password</span><input type="password" id="jn-pass" value="{plhd_spass}" maxlength="80" autocomplete="current-password"><em class="jn-err" id="jn-e-pass"></em></div>
+        <div class="jn-note jn-note-bad" id="jn-note" role="alert"></div>
+        <button type="submit" class="jn-btn">Sign in</button>
+    </form>
+    <form id="jn-form-new" class="jn-form" hidden onsubmit="return JoinJs.signUp()" novalidate>
+        <h2>Create your account</h2>
+        <p class="jn-hint">It is free. You only pay when you enrol in a course.</p>
+        <div class="jn-field"><span>Your name</span><input type="text" id="jn-name" maxlength="60" autocomplete="name"><em class="jn-err" id="jn-e-name"></em></div>
+        <div class="jn-field"><span>Email</span><input type="email" id="jn-email2" maxlength="80" autocomplete="email"><em class="jn-err" id="jn-e-email2"></em></div>
+        <div class="jn-field"><span>Phone</span><input type="tel" id="jn-phone" maxlength="24" autocomplete="tel" placeholder="(555) 201-4477"><em class="jn-err" id="jn-e-phone"></em></div>
+        <div class="jn-field"><span>Password</span><input type="password" id="jn-pass2" maxlength="80" autocomplete="new-password"><em class="jn-err" id="jn-e-pass1"></em></div>
+        <div class="jn-field"><span>Password again</span><input type="password" id="jn-pass3" maxlength="80" autocomplete="new-password"><em class="jn-err" id="jn-e-pass2"></em></div>
+        <button type="submit" class="jn-btn">Create account</button>
+    </form>
+</div>
+<div class="jn-card jn-panel jn-gate jn-gate-staff">
+    <div class="jn-gate-t"><span class="jn-gate-i" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M3 13h18"/></svg></span><div><b>Staff and instructors</b><small>The school office and teaching team</small></div></div>
+    <h2>Staff sign in</h2>
+    <p class="jn-hint">Instructors manage their own courses, lessons, quizzes and students. School staff look after enrollments, orders, refunds, messages and the website, each with the rights a manager gives them.</p>
+    <ul class="jn-gate-l">
+        <li>Instructors see only the courses they teach</li>
+        <li>Office staff see the areas they have rights to</li>
+        <li>Managers set up accounts in Users and rights</li>
+    </ul>
+    {plhd_staffdemo}
+    <a class="jn-btn jn-btn-dark" href="AdminLogin">Go to staff sign in</a>
+    <p class="jn-gate-f">No staff account? Ask your manager to add you.</p>
+</div>
+</div>
+<input type="hidden" id="jn-mode" value="{plhd_mode}">
+</section>
+</main>
+<footer class="jn-foot">
+    <div class="jn-foot-in">
+        <div class="jn-fbrand"><a class="jn-logo" href="Home"><svg viewBox="0 0 40 40" width="36" height="36" aria-hidden="true"><rect width="40" height="40" rx="10" fill="#1F2A37"/><path d="M8 28a12 12 0 0 1 24 0" fill="#F6D77A"/><path d="M13 28a7 7 0 0 1 14 0" fill="#C2540A"/><path d="M6 30h28" stroke="#FBF7EF" stroke-width="2.4" stroke-linecap="round"/></svg><span>Brightpath Academy</span></a><p>Practical skills courses in photography, spreadsheets, home cooking and drawing.</p></div>
+        <div class="jn-fcol"><b>Learn</b><a href="Courses">Course catalog</a><a href="Instructors">Instructors</a><a href="Verify">Verify a certificate</a></div>
+        <div class="jn-fcol"><b>School</b><a href="About">About</a><a href="Faq">FAQ</a><a href="Policy">Terms and refunds</a></div>
+        <div class="jn-fcol"><b>Help</b><a href="Contact">Contact us</a><a href="MyCourses">My courses</a><a href="Account">My account</a><a href="AdminLogin">Staff sign in</a></div>
+    </div>
+    <div class="jn-foot-b">&copy; 2026 Brightpath Academy. Sample school for the OnlineSchool template.</div>
+</footer>
+<div class="jn-toast" id="jn-toast" role="status" aria-live="polite"></div>
+</div>

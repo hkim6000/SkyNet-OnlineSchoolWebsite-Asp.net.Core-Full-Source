@@ -1,0 +1,24 @@
+[
+  {
+    "code": "BPA-7K3Q-92XD",
+    "studentId": "s-chloe",
+    "studentName": "Chloe Mbeki",
+    "courseId": "spreadsheets-from-scratch",
+    "courseTitle": "Spreadsheets From Scratch",
+    "enrollmentId": "E-CHL001",
+    "issued": "2026-10-09T03:27:19Z",
+    "revoked": false,
+    "revokedOn": null
+  },
+  {
+    "code": "BPA-D4V2-8MQH",
+    "studentId": "s-dev",
+    "studentName": "Dev Anand",
+    "courseId": "drawing-foundations",
+    "courseTitle": "Drawing Foundations",
+    "enrollmentId": "E-DEV001",
+    "issued": "2026-10-15T03:27:19Z",
+    "revoked": true,
+    "revokedOn": "2026-10-19T03:27:19Z"
+  }
+]

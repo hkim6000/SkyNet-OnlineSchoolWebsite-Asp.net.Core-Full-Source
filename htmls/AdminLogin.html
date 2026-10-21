@@ -1,0 +1,23 @@
+<div class="lg-site" data-page="AdminLogin" id="lg-site-root">
+<main class="lg-main">
+    <a class="lg-logo" href="Home" aria-label="Brightpath Academy home"><svg viewBox="0 0 40 40" width="40" height="40" aria-hidden="true"><rect width="40" height="40" rx="10" fill="#1F2A37"/><path d="M8 28a12 12 0 0 1 24 0" fill="#F6D77A"/><path d="M13 28a7 7 0 0 1 14 0" fill="#C2540A"/><path d="M6 30h28" stroke="#FBF7EF" stroke-width="2.4" stroke-linecap="round"/></svg><span>Brightpath Academy</span></a>
+    <div class="lg-card">
+        <h1>Staff sign in</h1>
+        <p class="lg-hint">For instructors and school staff. Students sign in on the <a href="Join">student page</a>.</p>
+        {plhd_demo}
+        {plhd_first}
+        <form class="lg-form" onsubmit="return AdminLoginJs.submit()" novalidate>
+            <label class="lg-field"><span>User name</span><input type="text" id="lg-user" value="{plhd_user}" maxlength="60" autocomplete="username" autocapitalize="none"></label>
+            <label class="lg-field"><span>Password</span><input type="password" id="lg-pass" value="{plhd_pass}" maxlength="80" autocomplete="current-password"></label>
+            <div class="lg-change" id="lg-change" hidden>
+                <p class="lg-hint">Choose your own password to continue. Use at least 8 characters.</p>
+                <label class="lg-field"><span>New password</span><input type="password" id="lg-new" maxlength="80" autocomplete="new-password"></label>
+                <label class="lg-field"><span>New password again</span><input type="password" id="lg-new2" maxlength="80" autocomplete="new-password"></label>
+            </div>
+            <div class="lg-note" id="lg-note" role="alert"></div>
+            <button type="submit" class="lg-btn" id="lg-go">Sign in</button>
+        </form>
+    </div>
+    <a class="lg-back" href="Home">Back to the website</a>
+</main>
+</div>

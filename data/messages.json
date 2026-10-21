@@ -1,0 +1,38 @@
+[
+  {
+    "id": "m-T3FT8D",
+    "name": "Hannah Cole",
+    "email": "hannah@example.com",
+    "topic": "Course question",
+    "text": "Do I need a special camera for Light and Composition, or is my phone fine?",
+    "when": "2026-10-20T22:27:19Z",
+    "read": false
+  },
+  {
+    "id": "m-6XK5XT",
+    "name": "Marcus Bell",
+    "email": "marcus@example.com",
+    "topic": "Order or payment",
+    "text": "I paid yesterday but my course is not showing. My order number is BP-Z0Z0Z0.",
+    "when": "2026-10-20T03:27:19Z",
+    "read": false
+  },
+  {
+    "id": "m-WGEN3F",
+    "name": "Sofia Reyes",
+    "email": "sofia@example.com",
+    "topic": "Teaching",
+    "text": "I teach pottery and would love to make a course with you. Who should I talk to?",
+    "when": "2026-10-17T03:27:19Z",
+    "read": true
+  },
+  {
+    "id": "m-U938T8",
+    "name": "Tariq Aziz",
+    "email": "tariq@example.com",
+    "topic": "Other",
+    "text": "Thank you for the bread course. The poke test finally made sense.",
+    "when": "2026-10-12T03:27:19Z",
+    "read": true
+  }
+]

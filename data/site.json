@@ -1,0 +1,1709 @@
+{
+  "brand": "Brightpath Academy",
+  "tagline": "Practical skills, one lesson at a time",
+  "email": "hello@brightpath.example",
+  "phone": "555-0142",
+  "address": "12 Lantern Row, Suite 4, Riverton",
+  "hours": "Mon to Fri, 9:00 to 17:00",
+  "refundDays": 14,
+  "progressLimit": 30,
+  "noCertificate": true,
+  "maxVideoMb": 30,
+  "topics": [
+    {
+      "key": "photography",
+      "label": "Photography",
+      "image": "images/topics/photography.webp",
+      "blurb": "See light, frame a picture and shoot with a camera you already own."
+    },
+    {
+      "key": "spreadsheets",
+      "label": "Spreadsheets",
+      "image": "images/topics/spreadsheets.webp",
+      "blurb": "Turn messy rows into answers, budgets and clear dashboards."
+    },
+    {
+      "key": "cooking",
+      "label": "Home cooking",
+      "image": "images/topics/cooking.webp",
+      "blurb": "Cook good food on a weeknight, from a small shelf of ingredients."
+    },
+    {
+      "key": "drawing",
+      "label": "Drawing",
+      "image": "images/topics/drawing.webp",
+      "blurb": "Learn to look, then put what you see on paper with a pencil or a pen."
+    }
+  ],
+  "instructors": [
+    {
+      "id": "ins-maya",
+      "name": "Maya Okafor",
+      "role": "Photographer and teacher",
+      "bio": "Maya has photographed weddings, markets and mountain mornings for fourteen years. She teaches the few habits that make the biggest difference to a picture: where the light comes from, what stays in the frame and when to press the button.",
+      "photo": "images/people/maya-okafor.webp",
+      "topic": "photography",
+      "active": true
+    },
+    {
+      "id": "ins-luis",
+      "name": "Luis Herrera",
+      "role": "Data analyst",
+      "bio": "Luis builds the reports that other people rely on. He teaches spreadsheets the way he wishes he had learned them: start with a question, keep the data tidy and let formulas do the repeating.",
+      "photo": "images/people/luis-herrera.webp",
+      "topic": "spreadsheets",
+      "active": true
+    },
+    {
+      "id": "ins-priya",
+      "name": "Priya Raman",
+      "role": "Home cook and recipe writer",
+      "bio": "Priya cooks for a busy family and writes recipes that work on a Tuesday night. Her courses are about technique first, so one skill opens many dishes.",
+      "photo": "images/people/priya-raman.webp",
+      "topic": "cooking",
+      "active": true
+    },
+    {
+      "id": "ins-tom",
+      "name": "Tomasz Wren",
+      "role": "Illustrator",
+      "bio": "Tomasz draws every day and keeps a sketchbook for each year. He teaches drawing as a way of seeing, with small exercises that fit into a coffee break.",
+      "photo": "images/people/tomasz-wren.webp",
+      "topic": "drawing",
+      "active": true
+    }
+  ],
+  "courses": [
+    {
+      "id": "light-and-composition",
+      "title": "Light and Composition",
+      "topic": "photography",
+      "level": "beginner",
+      "price": 49,
+      "summary": "Learn to see light and frame a picture. No special camera needed.",
+      "description": "A friendly first course in photography. You will learn how light shapes a picture, how to arrange what is in the frame and how to take the same scene three ways so you can choose the best one. Everything is taught with the camera you already own, including a phone.",
+      "outcomes": "Read the direction and softness of light\nUse the rule of thirds, lines and framing on purpose\nSet exposure so your pictures are not too dark or too bright\nBuild a small set of pictures you are proud of",
+      "instructorId": "ins-maya",
+      "cover": "images/courses/light-and-composition.webp",
+      "published": true,
+      "featured": true,
+      "lessons": [
+        {
+          "id": "l1",
+          "title": "Why some pictures work",
+          "minutes": 8,
+          "video": "images/videos/photography-intro.mp4",
+          "poster": "",
+          "notes": "A good picture is rarely about the camera. It is about where the light falls, what you chose to leave out and the moment you pressed the button.\nTake a walk and look at ordinary things for ten minutes before you take a single picture.",
+          "summary": "Look at four pictures and say why one is better.",
+          "free": true
+        },
+        {
+          "id": "l2",
+          "title": "Reading the light",
+          "minutes": 11,
+          "video": "images/videos/photography-intro.mp4",
+          "poster": "",
+          "notes": "Light from the side shows shape. Light from behind makes a glow. Light from above flattens a face.\nNote the time and the weather next to every picture you take this week.",
+          "summary": "Direction, softness and colour of light through the day.",
+          "free": false
+        },
+        {
+          "id": "l3",
+          "title": "Framing and the rule of thirds",
+          "minutes": 12,
+          "video": "images/videos/photography-intro.mp4",
+          "poster": "",
+          "notes": "Imagine a grid of nine boxes. Put the thing you care about on a crossing line and give it room to look into.\nTry the same subject centred, then off to one side, and compare.",
+          "summary": "Place your subject and use lines to lead the eye.",
+          "free": false
+        },
+        {
+          "id": "l4",
+          "title": "Exposure without the maths",
+          "minutes": 14,
+          "video": "images/videos/photography-intro.mp4",
+          "poster": "",
+          "notes": "Three things control brightness: how long the shutter is open, how wide the hole is and how sensitive the sensor is.\nOn a phone, tap the screen where the subject is and slide the brightness until it looks right.",
+          "summary": "Brightness, shutter and aperture in plain words.",
+          "free": false
+        },
+        {
+          "id": "l5",
+          "title": "Shoot one scene three ways",
+          "minutes": 10,
+          "video": "images/videos/photography-intro.mp4",
+          "poster": "",
+          "notes": "Pick one scene near your home. Shoot it wide, then close, then from low down.\nSort your pictures and write one line about why you chose your favourite.",
+          "summary": "A practical exercise to put it all together.",
+          "free": false
+        },
+        {
+          "id": "l6",
+          "title": "Choosing and sharing your best",
+          "minutes": 7,
+          "video": "images/videos/photography-intro.mp4",
+          "poster": "",
+          "notes": "Crop to improve the frame, nudge the brightness and stop there.\nShow three pictures, not thirty.",
+          "summary": "Edit lightly and pick the pictures worth showing.",
+          "free": false
+        }
+      ]
+    },
+    {
+      "id": "portraits-by-window-light",
+      "title": "Portraits by Window Light",
+      "topic": "photography",
+      "level": "intermediate",
+      "price": 79,
+      "summary": "Make warm, natural portraits at home with one window and a sheet of card.",
+      "description": "Window light is the softest, kindest light there is. In this course you will place a person, a window and a simple reflector to make portraits with depth and a natural look, without buying lights.",
+      "outcomes": "Position a subject to a window for flattering light\nUse a reflector made from card or a sheet\nDirect a relaxed person and choose the moment\nEdit portraits so skin looks natural",
+      "instructorId": "ins-maya",
+      "cover": "images/courses/portraits-by-window-light.webp",
+      "published": true,
+      "featured": false,
+      "lessons": [
+        {
+          "id": "l1",
+          "title": "The window as a studio",
+          "minutes": 9,
+          "video": "images/videos/photography-intro.mp4",
+          "poster": "",
+          "notes": "North-facing windows give steady light, while a sunny window gives strong contrast. Hang a thin white curtain to soften harsh sun.\nStand at the window and look at how the light falls on your own hand.",
+          "summary": "Find the best window in your home and test it.",
+          "free": true
+        },
+        {
+          "id": "l2",
+          "title": "Placing your subject",
+          "minutes": 13,
+          "video": "images/videos/photography-intro.mp4",
+          "poster": "",
+          "notes": "Turn the face slightly toward the window until a small triangle of light appears on the shadow-side cheek.\nMove the person a step at a time and watch the catch-lights in the eyes.",
+          "summary": "Angles between the face, the window and the camera.",
+          "free": false
+        },
+        {
+          "id": "l3",
+          "title": "Fill with a reflector",
+          "minutes": 10,
+          "video": "images/videos/photography-intro.mp4",
+          "poster": "",
+          "notes": "Hold a sheet of white card opposite the window to bounce soft light back into the shadow side.\nMove it closer for more fill and farther for less.",
+          "summary": "Lift the shadows with white card.",
+          "free": false
+        },
+        {
+          "id": "l4",
+          "title": "Directing a relaxed person",
+          "minutes": 12,
+          "video": "images/videos/photography-intro.mp4",
+          "poster": "",
+          "notes": "People relax when they have something to do. Ask a question and shoot while they answer.\nKeep your camera up and keep talking.",
+          "summary": "Talk, pause and wait for the real expression.",
+          "free": false
+        },
+        {
+          "id": "l5",
+          "title": "Editing for natural skin",
+          "minutes": 11,
+          "video": "images/videos/photography-intro.mp4",
+          "poster": "",
+          "notes": "Fix brightness and colour first. Soften only what distracts.\nCompare with the original often so you do not drift too far.",
+          "summary": "Simple, honest retouching.",
+          "free": false
+        }
+      ]
+    },
+    {
+      "id": "spreadsheets-from-scratch",
+      "title": "Spreadsheets From Scratch",
+      "topic": "spreadsheets",
+      "level": "beginner",
+      "price": 39,
+      "summary": "Build your first useful spreadsheet and understand every cell.",
+      "description": "You will start with an empty grid and finish with a working household budget. Along the way you will learn how cells, rows and formulas behave, how to keep data tidy and how to make a simple chart that people understand at a glance.",
+      "outcomes": "Enter, format and sort data with confidence\nWrite sums, averages and simple IF formulas\nUse absolute and relative references correctly\nMake a clear chart and a printable budget",
+      "instructorId": "ins-luis",
+      "cover": "images/courses/spreadsheets-from-scratch.webp",
+      "published": true,
+      "featured": true,
+      "lessons": [
+        {
+          "id": "l1",
+          "title": "The grid and your first numbers",
+          "minutes": 9,
+          "video": "images/videos/spreadsheets-intro.mp4",
+          "poster": "",
+          "notes": "A spreadsheet is a table where every cell has an address such as B3. Type a number, press Enter and you have started.\nPractise with the arrow keys and Tab until you do not need the mouse.",
+          "summary": "Cells, rows, columns and moving around quickly.",
+          "free": true
+        },
+        {
+          "id": "l2",
+          "title": "Formulas: sums and averages",
+          "minutes": 12,
+          "video": "images/videos/spreadsheets-intro.mp4",
+          "poster": "",
+          "notes": "A formula always starts with an equals sign. =SUM(B2:B8) adds a range and =AVERAGE(B2:B8) finds the middle.\nChange a number and watch the total update by itself.",
+          "summary": "Let the sheet do the arithmetic.",
+          "free": false
+        },
+        {
+          "id": "l3",
+          "title": "Keeping data tidy",
+          "minutes": 10,
+          "video": "images/videos/spreadsheets-intro.mp4",
+          "poster": "",
+          "notes": "Put headings in the top row and keep blank rows out of the middle of your data.\nTidy data can be sorted, filtered and charted with no extra work.",
+          "summary": "One fact per cell, one row per thing.",
+          "free": false
+        },
+        {
+          "id": "l4",
+          "title": "Copying formulas: references",
+          "minutes": 14,
+          "video": "images/videos/spreadsheets-intro.mp4",
+          "poster": "",
+          "notes": "When you drag a formula down, cell addresses move with it. A dollar sign, as in $B$1, pins a reference in place.\nUse a pinned cell for a tax rate or a monthly limit.",
+          "summary": "Relative and absolute references, with a dollar sign.",
+          "free": false
+        },
+        {
+          "id": "l5",
+          "title": "Making decisions with IF",
+          "minutes": 11,
+          "video": "images/videos/spreadsheets-intro.mp4",
+          "poster": "",
+          "notes": "=IF(B2>100,\"Over\",\"OK\") checks the number and returns one of two answers.\nAdd conditional colours so the sheet shows problems for you.",
+          "summary": "Show a message or a number depending on a test.",
+          "free": false
+        },
+        {
+          "id": "l6",
+          "title": "A chart people understand",
+          "minutes": 9,
+          "video": "images/videos/spreadsheets-intro.mp4",
+          "poster": "",
+          "notes": "Use a bar chart to compare, a line chart for change over time and avoid 3D effects.\nGive the chart a title that says what it shows.",
+          "summary": "Pick the right chart and remove the clutter.",
+          "free": false
+        }
+      ]
+    },
+    {
+      "id": "pivot-tables-and-dashboards",
+      "title": "Pivot Tables and Dashboards",
+      "topic": "spreadsheets",
+      "level": "advanced",
+      "price": 119,
+      "summary": "Summarise thousands of rows in seconds and present them on one page.",
+      "description": "For people who already know formulas. You will turn a long list of sales into pivot tables, slice them live and assemble a one-page dashboard that updates when new data arrives.",
+      "outcomes": "Build pivot tables from a clean table\nGroup by date, category and region\nUse lookups to join two lists\nPublish a dashboard with slicers",
+      "instructorId": "ins-luis",
+      "cover": "images/courses/pivot-tables-and-dashboards.webp",
+      "published": true,
+      "featured": false,
+      "lessons": [
+        {
+          "id": "l1",
+          "title": "From a list to a table",
+          "minutes": 10,
+          "video": "images/videos/spreadsheets-intro.mp4",
+          "poster": "",
+          "notes": "Convert the range to a table so new rows are picked up automatically.\nCheck for blank cells, text numbers and duplicate headings.",
+          "summary": "Prepare data so a pivot table can use it.",
+          "free": true
+        },
+        {
+          "id": "l2",
+          "title": "Your first pivot table",
+          "minutes": 13,
+          "video": "images/videos/spreadsheets-intro.mp4",
+          "poster": "",
+          "notes": "Drag a field to Rows, another to Values and see the summary appear.\nTry the same fields in a different place and notice what changes.",
+          "summary": "Rows, columns, values and filters.",
+          "free": false
+        },
+        {
+          "id": "l3",
+          "title": "Grouping dates and numbers",
+          "minutes": 12,
+          "video": "images/videos/spreadsheets-intro.mp4",
+          "poster": "",
+          "notes": "Group a date field by month to see the shape of the year.\nGroup ages or prices into bands to find patterns.",
+          "summary": "Months, quarters and bands.",
+          "free": false
+        },
+        {
+          "id": "l4",
+          "title": "Lookups that join lists",
+          "minutes": 15,
+          "video": "images/videos/spreadsheets-intro.mp4",
+          "poster": "",
+          "notes": "Use XLOOKUP, or INDEX with MATCH, to fetch a value by its code.\nWrap the formula in IFERROR so missing codes do not break the sheet.",
+          "summary": "Bring a price or a name from another sheet.",
+          "free": false
+        },
+        {
+          "id": "l5",
+          "title": "Slicers and charts",
+          "minutes": 11,
+          "video": "images/videos/spreadsheets-intro.mp4",
+          "poster": "",
+          "notes": "A slicer is a set of buttons that filters one or many pivots at once.\nLink a chart to the pivot so it changes with the slicer.",
+          "summary": "Make the pivot interactive.",
+          "free": false
+        },
+        {
+          "id": "l6",
+          "title": "Assemble the dashboard",
+          "minutes": 14,
+          "video": "images/videos/spreadsheets-intro.mp4",
+          "poster": "",
+          "notes": "Decide the question first. Put the most important number top left.\nLeave space around each chart and use one colour for one meaning.",
+          "summary": "One page, four numbers and two charts.",
+          "free": false
+        }
+      ]
+    },
+    {
+      "id": "weeknight-cooking-basics",
+      "title": "Weeknight Cooking Basics",
+      "topic": "cooking",
+      "level": "beginner",
+      "price": 29,
+      "summary": "Five techniques that make a quick, good dinner from almost anything.",
+      "description": "Cooking is easier when you know a few techniques well. We cover knife work, heat, seasoning, a one-pan dinner and a sauce that rescues leftovers, using a small shelf of ingredients that keep well.",
+      "outcomes": "Cut vegetables quickly and safely\nControl heat so food browns and does not burn\nSeason in layers and taste as you go\nCook a full dinner in one pan in thirty minutes",
+      "instructorId": "ins-priya",
+      "cover": "images/courses/weeknight-cooking-basics.webp",
+      "published": true,
+      "featured": true,
+      "lessons": [
+        {
+          "id": "l1",
+          "title": "Your kitchen kit and your knife",
+          "minutes": 9,
+          "video": "images/videos/cooking-intro.mp4",
+          "poster": "",
+          "notes": "One good knife, a board, a pan and a pot will take you a long way.\nCurl the fingers of your guiding hand and let the knife glide against your knuckles.",
+          "summary": "What you need, and how to hold a knife.",
+          "free": true
+        },
+        {
+          "id": "l2",
+          "title": "Heat and browning",
+          "minutes": 11,
+          "video": "images/videos/cooking-intro.mp4",
+          "poster": "",
+          "notes": "Pat food dry and let the pan get hot before the food goes in.\nLeave it alone until it lets go of the pan by itself.",
+          "summary": "Why a hot dry pan matters.",
+          "free": false
+        },
+        {
+          "id": "l3",
+          "title": "Seasoning and tasting",
+          "minutes": 8,
+          "video": "images/videos/cooking-intro.mp4",
+          "poster": "",
+          "notes": "Salt in small amounts at each stage, then finish with lemon or vinegar.\nTaste, adjust and taste again.",
+          "summary": "Salt, acid and fat in the right order.",
+          "free": false
+        },
+        {
+          "id": "l4",
+          "title": "One-pan chicken and vegetables",
+          "minutes": 15,
+          "video": "images/videos/cooking-intro.mp4",
+          "poster": "",
+          "notes": "Start with the pieces that take longest and add the quick ones later.\nA meat thermometer saves guessing.",
+          "summary": "A whole dinner, one dish to wash.",
+          "free": false
+        },
+        {
+          "id": "l5",
+          "title": "The pan sauce and leftovers",
+          "minutes": 10,
+          "video": "images/videos/cooking-intro.mp4",
+          "poster": "",
+          "notes": "Pour in a splash of stock, scrape the pan and let it bubble until it coats a spoon.\nStir in a small knob of butter at the end.",
+          "summary": "Turn the browned bits into a sauce.",
+          "free": false
+        }
+      ]
+    },
+    {
+      "id": "bread-and-baking-at-home",
+      "title": "Bread and Baking at Home",
+      "topic": "cooking",
+      "level": "intermediate",
+      "price": 89,
+      "summary": "Bake a loaf you are proud of, then use the same dough for rolls and flatbreads.",
+      "description": "Bread is flour, water, salt and time. You will learn why dough behaves as it does, how to shape and score a loaf and how to fix the common problems, using only a bowl, an oven and a heavy pot.",
+      "outcomes": "Mix and knead or fold a simple dough\nJudge when dough has risen enough\nShape, score and bake with steam\nTroubleshoot dense or flat loaves",
+      "instructorId": "ins-priya",
+      "cover": "images/courses/bread-and-baking-at-home.webp",
+      "published": true,
+      "featured": false,
+      "lessons": [
+        {
+          "id": "l1",
+          "title": "What flour, water and yeast do",
+          "minutes": 10,
+          "video": "images/videos/cooking-intro.mp4",
+          "poster": "",
+          "notes": "Water wakes the flour, kneading builds structure and yeast makes the gas that lifts it.\nWeigh your ingredients for the same loaf each time.",
+          "summary": "The science in a few minutes.",
+          "free": true
+        },
+        {
+          "id": "l2",
+          "title": "Mixing and folding",
+          "minutes": 13,
+          "video": "images/videos/cooking-intro.mp4",
+          "poster": "",
+          "notes": "Rest the dough and fold it a few times instead of long kneading.\nWet your hands so the dough does not stick.",
+          "summary": "No-knead and kneaded doughs.",
+          "free": false
+        },
+        {
+          "id": "l3",
+          "title": "Rising and the poke test",
+          "minutes": 9,
+          "video": "images/videos/cooking-intro.mp4",
+          "poster": "",
+          "notes": "Press a floured finger in. If the dent springs back slowly, it is ready.\nA cooler room means a slower and tastier rise.",
+          "summary": "Know when it is ready.",
+          "free": false
+        },
+        {
+          "id": "l4",
+          "title": "Shaping and scoring",
+          "minutes": 14,
+          "video": "images/videos/cooking-intro.mp4",
+          "poster": "",
+          "notes": "Pull the dough toward you to tighten the skin.\nScore with a sharp blade at a shallow angle so the loaf can open.",
+          "summary": "Tension on the surface gives a good shape.",
+          "free": false
+        },
+        {
+          "id": "l5",
+          "title": "Baking with steam",
+          "minutes": 12,
+          "video": "images/videos/cooking-intro.mp4",
+          "poster": "",
+          "notes": "Preheat the pot, drop in the dough and bake with the lid on for the first half.\nCool the loaf fully before you slice it.",
+          "summary": "A heavy pot makes a bakery crust.",
+          "free": false
+        },
+        {
+          "id": "l6",
+          "title": "Fixing problems and using the dough",
+          "minutes": 11,
+          "video": "images/videos/cooking-intro.mp4",
+          "poster": "",
+          "notes": "Most bread problems are timing problems. Write down the time and temperature each bake.\nRoll the same dough thin for flatbreads.",
+          "summary": "Dense, flat, pale and what to do next.",
+          "free": false
+        }
+      ]
+    },
+    {
+      "id": "drawing-foundations",
+      "title": "Drawing Foundations",
+      "topic": "drawing",
+      "level": "beginner",
+      "price": 45,
+      "summary": "Learn to see shapes, lines and light, and draw what is in front of you.",
+      "description": "No talent required. You will practise a handful of exercises that train your eye: contour lines, basic shapes, proportion, light and shadow. By the end you will draw a small still life from observation.",
+      "outcomes": "Draw confident lines instead of timid ones\nBreak objects into simple shapes\nMeasure proportions by eye\nShade a form so it looks solid",
+      "instructorId": "ins-tom",
+      "cover": "images/courses/drawing-foundations.webp",
+      "published": true,
+      "featured": true,
+      "lessons": [
+        {
+          "id": "l1",
+          "title": "Warm up: lines and circles",
+          "minutes": 8,
+          "video": "images/videos/drawing-intro.mp4",
+          "poster": "",
+          "notes": "Draw from the shoulder, not the wrist. Fill a page with long lines and loops.\nDo this warm-up before every session.",
+          "summary": "Loosen your hand with a few simple marks.",
+          "free": true
+        },
+        {
+          "id": "l2",
+          "title": "Seeing shapes",
+          "minutes": 12,
+          "video": "images/videos/drawing-intro.mp4",
+          "poster": "",
+          "notes": "Everything is a mix of boxes, cylinders and spheres.\nSketch the big shape first and add detail last.",
+          "summary": "Break a cup, a pear and a book into basic forms.",
+          "free": false
+        },
+        {
+          "id": "l3",
+          "title": "Contour and blind contour",
+          "minutes": 10,
+          "video": "images/videos/drawing-intro.mp4",
+          "poster": "",
+          "notes": "Draw the edge of an object without looking at the paper.\nThe drawings look odd and train your eye very quickly.",
+          "summary": "Slow, careful looking.",
+          "free": false
+        },
+        {
+          "id": "l4",
+          "title": "Proportion and measuring",
+          "minutes": 13,
+          "video": "images/videos/drawing-intro.mp4",
+          "poster": "",
+          "notes": "Hold the pencil at arm's length and compare one height with another.\nCheck the angles by holding the pencil against them.",
+          "summary": "Use a pencil as a ruler.",
+          "free": false
+        },
+        {
+          "id": "l5",
+          "title": "Light, shadow and form",
+          "minutes": 14,
+          "video": "images/videos/drawing-intro.mp4",
+          "poster": "",
+          "notes": "Find the lightest light, the darkest dark and the soft edge between them.\nBuild shade with light layers, not one heavy press.",
+          "summary": "Shade a sphere and a cup.",
+          "free": false
+        },
+        {
+          "id": "l6",
+          "title": "A still life from start to finish",
+          "minutes": 16,
+          "video": "images/videos/drawing-intro.mp4",
+          "poster": "",
+          "notes": "Arrange three objects by a lamp. Place them lightly, measure and shade.\nStep away from the drawing often.",
+          "summary": "Put every skill into one drawing.",
+          "free": false
+        }
+      ]
+    },
+    {
+      "id": "figure-sketching-in-ink",
+      "title": "Figure Sketching in Ink",
+      "topic": "drawing",
+      "level": "advanced",
+      "price": 99,
+      "summary": "Capture a person in a few confident lines, with pen and brush.",
+      "description": "A course for people who already draw. You will sketch gesture in under a minute, build a figure from simple forms and use ink lines and washes to suggest weight, cloth and light.",
+      "outcomes": "Capture gesture in 30 to 60 seconds\nBuild a figure from simple volumes\nUse line weight and a brush wash\nFinish a sheet of figure studies",
+      "instructorId": "ins-tom",
+      "cover": "images/courses/figure-sketching-in-ink.webp",
+      "published": true,
+      "featured": false,
+      "lessons": [
+        {
+          "id": "l1",
+          "title": "Gesture in one minute",
+          "minutes": 10,
+          "video": "images/videos/drawing-intro.mp4",
+          "poster": "",
+          "notes": "Draw one flowing line through the spine and limbs.\nSet a timer and do ten sketches in ten minutes.",
+          "summary": "Catch the action before the details.",
+          "free": true
+        },
+        {
+          "id": "l2",
+          "title": "Building with simple forms",
+          "minutes": 14,
+          "video": "images/videos/drawing-intro.mp4",
+          "poster": "",
+          "notes": "Think of the torso as two boxes that can tilt against each other.\nDraw through the form so the pose looks solid.",
+          "summary": "Ribcage, pelvis and limbs as volumes.",
+          "free": false
+        },
+        {
+          "id": "l3",
+          "title": "Line weight and confidence",
+          "minutes": 11,
+          "video": "images/videos/drawing-intro.mp4",
+          "poster": "",
+          "notes": "Press harder where the form turns away or sits in shadow.\nLet one line say a lot.",
+          "summary": "Heavier lines near the viewer and in shadow.",
+          "free": false
+        },
+        {
+          "id": "l4",
+          "title": "Cloth and folds",
+          "minutes": 12,
+          "video": "images/videos/drawing-intro.mp4",
+          "poster": "",
+          "notes": "Look for the point where the cloth is held and the folds spread from it.\nDraw fewer folds, with clear purpose.",
+          "summary": "Folds follow tension and gravity.",
+          "free": false
+        },
+        {
+          "id": "l5",
+          "title": "Brush wash and tone",
+          "minutes": 13,
+          "video": "images/videos/drawing-intro.mp4",
+          "poster": "",
+          "notes": "Dilute ink with water and lay one flat wash for shadow.\nLet the wash dry before a second layer.",
+          "summary": "Add depth with thin ink.",
+          "free": false
+        },
+        {
+          "id": "l6",
+          "title": "A sheet of figure studies",
+          "minutes": 15,
+          "video": "images/videos/drawing-intro.mp4",
+          "poster": "",
+          "notes": "Fill a page with eight poses of different lengths.\nChoose your favourite and write down what worked.",
+          "summary": "Combine everything in a full page.",
+          "free": false
+        }
+      ]
+    }
+  ],
+  "quizzes": [
+    {
+      "id": "q-light-and-composition-1",
+      "courseId": "light-and-composition",
+      "title": "Mid-course check: light",
+      "afterLesson": "l1",
+      "passMark": 70,
+      "questions": [
+        {
+          "text": "Which light shows the shape of a face best?",
+          "options": [
+            "Light from directly above",
+            "Light from the side",
+            "Light from the camera"
+          ],
+          "answer": 1,
+          "why": "Side light creates gentle shadows that show shape."
+        },
+        {
+          "text": "What does soft light usually come from?",
+          "options": [
+            "A large, diffused source such as an overcast sky",
+            "A small bright bulb",
+            "The camera flash"
+          ],
+          "answer": 0,
+          "why": "A large source wraps around the subject."
+        }
+      ]
+    },
+    {
+      "id": "q-light-and-composition-2",
+      "courseId": "light-and-composition",
+      "title": "Final quiz: composition and exposure",
+      "afterLesson": "l6",
+      "passMark": 70,
+      "questions": [
+        {
+          "text": "In the rule of thirds, where do you place the subject?",
+          "options": [
+            "Dead centre",
+            "On a crossing line of a nine-box grid",
+            "In a corner"
+          ],
+          "answer": 1,
+          "why": "Crossing points give balance."
+        },
+        {
+          "text": "Your picture looks too dark. What can you do first?",
+          "options": [
+            "Move the brightness up or expose for the subject",
+            "Buy a new lens",
+            "Delete it"
+          ],
+          "answer": 0,
+          "why": "Exposure controls brightness."
+        },
+        {
+          "text": "Why shoot one scene three ways?",
+          "options": [
+            "To fill the memory card",
+            "To compare and choose the best framing",
+            "Because rules say so"
+          ],
+          "answer": 1,
+          "why": "Comparing teaches you what works."
+        },
+        {
+          "text": "How many pictures should you share from a set?",
+          "options": [
+            "As many as possible",
+            "Only the best few",
+            "None"
+          ],
+          "answer": 1,
+          "why": "Editing is part of the craft."
+        }
+      ]
+    },
+    {
+      "id": "q-portraits-by-window-light-1",
+      "courseId": "portraits-by-window-light",
+      "title": "Final quiz: window light portraits",
+      "afterLesson": "l5",
+      "passMark": 75,
+      "questions": [
+        {
+          "text": "How do you soften harsh sun at a window?",
+          "options": [
+            "Hang a thin white curtain",
+            "Close the camera lens",
+            "Turn on the room light"
+          ],
+          "answer": 0,
+          "why": "A sheer curtain diffuses the sun."
+        },
+        {
+          "text": "What does a reflector do?",
+          "options": [
+            "Adds shadow",
+            "Bounces light into the shadows",
+            "Changes the colour of the walls"
+          ],
+          "answer": 1,
+          "why": "It fills the shadow side."
+        },
+        {
+          "text": "A relaxed expression comes most easily when you...",
+          "options": [
+            "Ask the person to hold still",
+            "Keep them talking while you shoot",
+            "Take one picture only"
+          ],
+          "answer": 1,
+          "why": "Conversation creates natural expressions."
+        },
+        {
+          "text": "In editing portraits, what should you fix first?",
+          "options": [
+            "Brightness and colour",
+            "Skin smoothing",
+            "Background blur"
+          ],
+          "answer": 0,
+          "why": "Basics first, then restraint."
+        }
+      ]
+    },
+    {
+      "id": "q-spreadsheets-from-scratch-1",
+      "courseId": "spreadsheets-from-scratch",
+      "title": "Mid-course check: formulas",
+      "afterLesson": "l2",
+      "passMark": 70,
+      "questions": [
+        {
+          "text": "Every formula begins with...",
+          "options": [
+            "A dollar sign",
+            "An equals sign",
+            "A hash"
+          ],
+          "answer": 1,
+          "why": "The equals sign tells the sheet to calculate."
+        },
+        {
+          "text": "What does =SUM(B2:B8) do?",
+          "options": [
+            "Adds the cells from B2 to B8",
+            "Counts the cells",
+            "Multiplies them"
+          ],
+          "answer": 0,
+          "why": "SUM adds the range."
+        }
+      ]
+    },
+    {
+      "id": "q-spreadsheets-from-scratch-2",
+      "courseId": "spreadsheets-from-scratch",
+      "title": "Final quiz: your first spreadsheet",
+      "afterLesson": "l6",
+      "passMark": 70,
+      "questions": [
+        {
+          "text": "What does a dollar sign in $B$1 do?",
+          "options": [
+            "Formats as money",
+            "Pins the reference when copied",
+            "Hides the cell"
+          ],
+          "answer": 1,
+          "why": "An absolute reference does not move."
+        },
+        {
+          "text": "Which chart is best for change over time?",
+          "options": [
+            "Line chart",
+            "Pie chart with 12 slices",
+            "3D donut"
+          ],
+          "answer": 0,
+          "why": "A line shows trends clearly."
+        },
+        {
+          "text": "What is tidy data?",
+          "options": [
+            "One fact per cell and one row per thing",
+            "Merged cells everywhere",
+            "Colours that mean something to you"
+          ],
+          "answer": 0,
+          "why": "Tidy data works with every tool."
+        },
+        {
+          "text": "=IF(B2>100,\"Over\",\"OK\") returns...",
+          "options": [
+            "Over when B2 is larger than 100",
+            "OK always",
+            "An error"
+          ],
+          "answer": 0,
+          "why": "IF returns one of two answers."
+        }
+      ]
+    },
+    {
+      "id": "q-pivot-tables-and-dashboards-1",
+      "courseId": "pivot-tables-and-dashboards",
+      "title": "Final quiz: pivots and lookups",
+      "afterLesson": "l6",
+      "passMark": 80,
+      "questions": [
+        {
+          "text": "A pivot table works best when the source is...",
+          "options": [
+            "A clean table with headings",
+            "Merged cells and subtotals",
+            "A picture"
+          ],
+          "answer": 0,
+          "why": "Clean tables keep pivots reliable."
+        },
+        {
+          "text": "What does a slicer do?",
+          "options": [
+            "Filters pivots with buttons",
+            "Deletes rows",
+            "Sorts a column"
+          ],
+          "answer": 0,
+          "why": "It filters one or many pivots."
+        },
+        {
+          "text": "Which formula fetches a price by code?",
+          "options": [
+            "XLOOKUP",
+            "SUM",
+            "TODAY"
+          ],
+          "answer": 0,
+          "why": "Lookups join two lists."
+        },
+        {
+          "text": "Where does the most important number go on a dashboard?",
+          "options": [
+            "Top left",
+            "Bottom right",
+            "Hidden in a tab"
+          ],
+          "answer": 0,
+          "why": "Readers start at the top left."
+        }
+      ]
+    },
+    {
+      "id": "q-weeknight-cooking-basics-1",
+      "courseId": "weeknight-cooking-basics",
+      "title": "Final quiz: weeknight techniques",
+      "afterLesson": "l5",
+      "passMark": 70,
+      "questions": [
+        {
+          "text": "Why pat meat dry before searing?",
+          "options": [
+            "So it browns instead of steaming",
+            "To save oil",
+            "To remove salt"
+          ],
+          "answer": 0,
+          "why": "Moisture stops browning."
+        },
+        {
+          "text": "When should you season?",
+          "options": [
+            "Only at the table",
+            "In layers, tasting as you go",
+            "Only before cooking"
+          ],
+          "answer": 1,
+          "why": "Layered seasoning builds flavour."
+        },
+        {
+          "text": "What helps a pan sauce thicken?",
+          "options": [
+            "Letting stock bubble and reduce",
+            "Adding more water",
+            "Cooling it"
+          ],
+          "answer": 0,
+          "why": "Reducing concentrates and thickens."
+        },
+        {
+          "text": "How do you hold food while cutting?",
+          "options": [
+            "Fingers flat",
+            "Fingertips curled back",
+            "Thumb on top"
+          ],
+          "answer": 1,
+          "why": "Curled fingers protect you."
+        }
+      ]
+    },
+    {
+      "id": "q-bread-and-baking-at-home-1",
+      "courseId": "bread-and-baking-at-home",
+      "title": "Final quiz: bread and baking",
+      "afterLesson": "l6",
+      "passMark": 75,
+      "questions": [
+        {
+          "text": "What makes dough rise?",
+          "options": [
+            "Gas made by yeast",
+            "Steam only",
+            "Salt"
+          ],
+          "answer": 0,
+          "why": "Yeast ferments sugars to gas."
+        },
+        {
+          "text": "How do you know dough has risen enough?",
+          "options": [
+            "A floured finger leaves a dent that springs back slowly",
+            "It has doubled in 10 minutes",
+            "It smells sweet"
+          ],
+          "answer": 0,
+          "why": "The poke test shows readiness."
+        },
+        {
+          "text": "Why bake in a covered heavy pot?",
+          "options": [
+            "It traps steam for a better crust",
+            "It saves electricity",
+            "It keeps the dough cold"
+          ],
+          "answer": 0,
+          "why": "Steam keeps the surface soft so the loaf expands."
+        },
+        {
+          "text": "A dense loaf is often a problem of...",
+          "options": [
+            "Timing and temperature",
+            "The colour of the bowl",
+            "The brand of flour only"
+          ],
+          "answer": 0,
+          "why": "Notes help you fix timing."
+        }
+      ]
+    },
+    {
+      "id": "q-drawing-foundations-1",
+      "courseId": "drawing-foundations",
+      "title": "Final quiz: drawing foundations",
+      "afterLesson": "l6",
+      "passMark": 70,
+      "questions": [
+        {
+          "text": "Where should the warm-up marks come from?",
+          "options": [
+            "The shoulder",
+            "The wrist only",
+            "The fingertips"
+          ],
+          "answer": 0,
+          "why": "Shoulder strokes are smoother and bolder."
+        },
+        {
+          "text": "What is blind contour for?",
+          "options": [
+            "Training your eye to look slowly",
+            "Making finished art",
+            "Saving time"
+          ],
+          "answer": 0,
+          "why": "It trains observation."
+        },
+        {
+          "text": "How can a pencil help measure?",
+          "options": [
+            "Held at arm's length as a ruler",
+            "As a pointer to the paper",
+            "Not at all"
+          ],
+          "answer": 0,
+          "why": "Sighting compares sizes."
+        },
+        {
+          "text": "How do you build smooth shading?",
+          "options": [
+            "Light layers",
+            "One heavy press",
+            "Smudging only"
+          ],
+          "answer": 0,
+          "why": "Layers give control."
+        }
+      ]
+    },
+    {
+      "id": "q-figure-sketching-in-ink-1",
+      "courseId": "figure-sketching-in-ink",
+      "title": "Final quiz: figure sketching",
+      "afterLesson": "l6",
+      "passMark": 80,
+      "questions": [
+        {
+          "text": "What is a gesture drawing?",
+          "options": [
+            "A quick drawing of the movement of a pose",
+            "A detailed portrait",
+            "A cartoon"
+          ],
+          "answer": 0,
+          "why": "Gesture captures action."
+        },
+        {
+          "text": "Where do you press harder with the pen?",
+          "options": [
+            "Where the form turns away or in shadow",
+            "Everywhere",
+            "At the highlights"
+          ],
+          "answer": 0,
+          "why": "Heavier lines add weight."
+        },
+        {
+          "text": "Cloth folds spread from...",
+          "options": [
+            "Points of tension",
+            "Random places",
+            "The edges only"
+          ],
+          "answer": 0,
+          "why": "Tension and gravity shape folds."
+        },
+        {
+          "text": "A wash should dry before...",
+          "options": [
+            "A second layer",
+            "You sign the page",
+            "You add a title"
+          ],
+          "answer": 0,
+          "why": "Wet layers blur."
+        }
+      ]
+    }
+  ],
+  "pages": {
+    "home": {
+      "blocks": [
+        {
+          "id": "b98ff95a56",
+          "type": "hero",
+          "source": "",
+          "hidden": false,
+          "kicker": "Practical skills, one lesson at a time",
+          "title": "Learn a skill you can use this week",
+          "text": "<p>Short video lessons, honest quizzes and a certificate you can share. Photography, spreadsheets, home cooking and drawing, taught by people who do the work.</p>",
+          "media": "images/pages/hero-campus.webp",
+          "label": "Browse courses",
+          "link": "Courses",
+          "label2": "Verify a certificate",
+          "link2": "Verify",
+          "flip": false,
+          "items": [
+            {
+              "icon": "",
+              "media": "images/pages/hero-classroom.webp",
+              "title": "Classroom",
+              "text": "",
+              "link": "",
+              "label": ""
+            },
+            {
+              "icon": "",
+              "media": "images/pages/hero-kitchen.webp",
+              "title": "Teaching kitchen",
+              "text": "",
+              "link": "",
+              "label": ""
+            },
+            {
+              "icon": "",
+              "media": "images/pages/hero-studio.webp",
+              "title": "Photo and drawing studio",
+              "text": "",
+              "link": "",
+              "label": ""
+            },
+            {
+              "icon": "",
+              "media": "images/pages/hero-library.webp",
+              "title": "Library",
+              "text": "",
+              "link": "",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "bc3fa512d3",
+          "type": "data",
+          "source": "featured",
+          "hidden": false,
+          "kicker": "Featured courses",
+          "title": "Start with a favourite",
+          "text": "",
+          "media": "",
+          "label": "",
+          "link": "",
+          "label2": "",
+          "link2": "",
+          "flip": false,
+          "items": []
+        },
+        {
+          "id": "bc5cc7156f",
+          "type": "cards",
+          "source": "",
+          "hidden": false,
+          "kicker": "Why {name}",
+          "title": "Made for busy people",
+          "text": "",
+          "media": "",
+          "label": "",
+          "link": "",
+          "label2": "",
+          "link2": "",
+          "flip": false,
+          "items": [
+            {
+              "icon": "clock",
+              "media": "",
+              "title": "Learn at your own pace",
+              "text": "Lessons are short. Stop, come back tomorrow and carry on where you left off.",
+              "link": "",
+              "label": ""
+            },
+            {
+              "icon": "play",
+              "media": "",
+              "title": "Try the first lesson free",
+              "text": "Every course has a free preview lesson, so you know the teaching suits you.",
+              "link": "",
+              "label": ""
+            },
+            {
+              "icon": "cert",
+              "media": "",
+              "title": "A certificate you can verify",
+              "text": "Finish the lessons and pass the quizzes to earn a certificate with its own check code.",
+              "link": "",
+              "label": ""
+            },
+            {
+              "icon": "card",
+              "media": "",
+              "title": "A fair refund policy",
+              "text": "Changed your mind early on? Our refund conditions are clear and a person checks every request.",
+              "link": "Policy",
+              "label": "Read the policy"
+            }
+          ]
+        },
+        {
+          "id": "b02b407587",
+          "type": "data",
+          "source": "topics",
+          "hidden": false,
+          "kicker": "Topics",
+          "title": "Pick what you want to do",
+          "text": "",
+          "media": "",
+          "label": "",
+          "link": "",
+          "label2": "",
+          "link2": "",
+          "flip": false,
+          "items": []
+        },
+        {
+          "id": "bb8215322b",
+          "type": "steps",
+          "source": "",
+          "hidden": false,
+          "kicker": "How it works",
+          "title": "From first lesson to certificate",
+          "text": "",
+          "media": "",
+          "label": "",
+          "link": "",
+          "label2": "",
+          "link2": "",
+          "flip": false,
+          "items": [
+            {
+              "icon": "",
+              "media": "",
+              "title": "Choose a course",
+              "text": "Filter by topic and level, and watch the free preview lesson.",
+              "link": "",
+              "label": ""
+            },
+            {
+              "icon": "",
+              "media": "",
+              "title": "Pay by card",
+              "text": "Checkout is by card through Stripe. Your course opens as soon as the payment is confirmed.",
+              "link": "",
+              "label": ""
+            },
+            {
+              "icon": "",
+              "media": "",
+              "title": "Learn and practise",
+              "text": "Watch the lessons, read the notes, mark each one complete and pass the quizzes.",
+              "link": "",
+              "label": ""
+            },
+            {
+              "icon": "",
+              "media": "",
+              "title": "Get your certificate",
+              "text": "A printable certificate with a check code appears when you finish.",
+              "link": "",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "badd01e5cc",
+          "type": "split",
+          "source": "",
+          "hidden": false,
+          "kicker": "Our teachers",
+          "title": "Taught by people who do the work",
+          "text": "<p>Every instructor here uses the skill they teach, every week. They keep lessons short and practical, with notes you can come back to.</p>",
+          "media": "images/pages/about.webp",
+          "label": "Meet the instructors",
+          "link": "Instructors",
+          "label2": "",
+          "link2": "",
+          "flip": false,
+          "items": []
+        },
+        {
+          "id": "b2e30b05a4",
+          "type": "cta",
+          "source": "",
+          "hidden": false,
+          "kicker": "",
+          "title": "Not sure where to start?",
+          "text": "<p>Tell us what you want to make or do and we will point you to a course.</p>",
+          "media": "",
+          "label": "See all courses",
+          "link": "Courses",
+          "label2": "Ask us",
+          "link2": "Contact",
+          "flip": false,
+          "items": []
+        }
+      ],
+      "versions": [],
+      "saved": "0001-01-01T00:00:00Z",
+      "by": ""
+    },
+    "courses": {
+      "blocks": [
+        {
+          "id": "b7375317b5",
+          "type": "data",
+          "source": "catalog",
+          "hidden": false,
+          "kicker": "Courses",
+          "title": "Course catalog",
+          "text": "<p>Filter by topic and level. Every course starts with a free preview lesson.</p>",
+          "media": "",
+          "label": "",
+          "link": "",
+          "label2": "",
+          "link2": "",
+          "flip": false,
+          "items": []
+        }
+      ],
+      "versions": [],
+      "saved": "0001-01-01T00:00:00Z",
+      "by": ""
+    },
+    "instructors": {
+      "blocks": [
+        {
+          "id": "b51a6ec512",
+          "type": "data",
+          "source": "team",
+          "hidden": false,
+          "kicker": "Instructors",
+          "title": "Meet your instructors",
+          "text": "<p>Four people who use these skills every week and like to explain them.</p>",
+          "media": "",
+          "label": "",
+          "link": "",
+          "label2": "",
+          "link2": "",
+          "flip": false,
+          "items": []
+        },
+        {
+          "id": "bccbd41ae3",
+          "type": "cta",
+          "source": "",
+          "hidden": false,
+          "kicker": "",
+          "title": "Questions before you enrol?",
+          "text": "<p>Write to us and we will answer within two working days.</p>",
+          "media": "",
+          "label": "Contact us",
+          "link": "Contact",
+          "label2": "",
+          "link2": "",
+          "flip": false,
+          "items": []
+        }
+      ],
+      "versions": [],
+      "saved": "0001-01-01T00:00:00Z",
+      "by": ""
+    },
+    "faq": {
+      "blocks": [
+        {
+          "id": "bd2a2920bb",
+          "type": "text",
+          "source": "",
+          "hidden": false,
+          "kicker": "FAQ",
+          "title": "Questions and answers",
+          "text": "<p>Can't find your answer? <a href=\"Contact\">Send us a message</a>.</p>",
+          "media": "",
+          "label": "",
+          "link": "",
+          "label2": "",
+          "link2": "",
+          "flip": false,
+          "items": []
+        },
+        {
+          "id": "b4864b2ec0",
+          "type": "faq",
+          "source": "",
+          "hidden": false,
+          "kicker": "",
+          "title": "",
+          "text": "",
+          "media": "",
+          "label": "",
+          "link": "",
+          "label2": "",
+          "link2": "",
+          "flip": false,
+          "items": [
+            {
+              "icon": "",
+              "media": "",
+              "title": "How do the courses work?",
+              "text": "Each course is a list of short video lessons with notes. Mark a lesson complete when you finish it, pass the quizzes and your certificate is issued when everything is done.",
+              "link": "",
+              "label": ""
+            },
+            {
+              "icon": "",
+              "media": "",
+              "title": "Can I try a course before paying?",
+              "text": "Yes. The first lesson of every course is a free preview. You can watch it without an account.",
+              "link": "",
+              "label": ""
+            },
+            {
+              "icon": "",
+              "media": "",
+              "title": "How do I pay?",
+              "text": "By card, through Stripe Checkout. As soon as the payment is confirmed the course opens in My courses.",
+              "link": "",
+              "label": ""
+            },
+            {
+              "icon": "",
+              "media": "",
+              "title": "What is the refund policy?",
+              "text": "You can ask for a refund from My account. The conditions (how many days, how much progress, and that no certificate has been issued) are on the Terms and refunds page. Every request is checked by a person, also those outside the conditions.",
+              "link": "",
+              "label": ""
+            },
+            {
+              "icon": "",
+              "media": "",
+              "title": "What happens if I get a full refund?",
+              "text": "Your access ends. Your progress is kept but locked, and a certificate you were given is revoked. You can enrol again at any time by paying again.",
+              "link": "",
+              "label": ""
+            },
+            {
+              "icon": "",
+              "media": "",
+              "title": "How long do I have access?",
+              "text": "For as long as your enrolment is active. There is no expiry date.",
+              "link": "",
+              "label": ""
+            },
+            {
+              "icon": "",
+              "media": "",
+              "title": "How do certificates work?",
+              "text": "When you have completed every lesson and passed every quiz, a printable certificate with a check code appears. Anyone can check the code on the Certificate page.",
+              "link": "",
+              "label": ""
+            },
+            {
+              "icon": "",
+              "media": "",
+              "title": "Can I watch on my phone?",
+              "text": "Yes. The site works on phones, tablets and computers, and your progress is the same everywhere.",
+              "link": "",
+              "label": ""
+            },
+            {
+              "icon": "",
+              "media": "",
+              "title": "I forgot my password.",
+              "text": "Write to us from the Contact page with the email you used and we will help.",
+              "link": "",
+              "label": ""
+            }
+          ]
+        }
+      ],
+      "versions": [],
+      "saved": "0001-01-01T00:00:00Z",
+      "by": ""
+    },
+    "about": {
+      "blocks": [
+        {
+          "id": "b435058f12",
+          "type": "split",
+          "source": "",
+          "hidden": false,
+          "kicker": "About us",
+          "title": "Practical skills, taught plainly",
+          "text": "<p><b>{name} is a small school for people who want to do something, not just know about it.</b></p><p>Our courses are short and practical. You learn a skill, you practise it the same day and you can show what you made.</p><p>We keep the catalog small on purpose, so every course gets the care it needs.</p>",
+          "media": "images/pages/about.webp",
+          "label": "Browse courses",
+          "link": "Courses",
+          "label2": "",
+          "link2": "",
+          "flip": false,
+          "items": []
+        },
+        {
+          "id": "b3a0334a12",
+          "type": "cards",
+          "source": "",
+          "hidden": false,
+          "kicker": "",
+          "title": "What we believe",
+          "text": "",
+          "media": "",
+          "label": "",
+          "link": "",
+          "label2": "",
+          "link2": "",
+          "flip": false,
+          "items": [
+            {
+              "icon": "heart",
+              "media": "",
+              "title": "Small steps",
+              "text": "A twelve-minute lesson you finish beats a two-hour lesson you abandon.",
+              "link": "",
+              "label": ""
+            },
+            {
+              "icon": "check",
+              "media": "",
+              "title": "Honest quizzes",
+              "text": "Quizzes check that you understood. You can retry as often as you like.",
+              "link": "",
+              "label": ""
+            },
+            {
+              "icon": "users",
+              "media": "",
+              "title": "Real teachers",
+              "text": "Every course is made and updated by the person whose name is on it.",
+              "link": "",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "bbf38d2c25",
+          "type": "cta",
+          "source": "",
+          "hidden": false,
+          "kicker": "",
+          "title": "Ready to start?",
+          "text": "<p>Watch a free preview lesson and decide for yourself.</p>",
+          "media": "",
+          "label": "Browse courses",
+          "link": "Courses",
+          "label2": "Get in touch",
+          "link2": "Contact",
+          "flip": false,
+          "items": []
+        }
+      ],
+      "versions": [],
+      "saved": "0001-01-01T00:00:00Z",
+      "by": ""
+    },
+    "policy": {
+      "blocks": [
+        {
+          "id": "b8bed9764a",
+          "type": "text",
+          "source": "",
+          "hidden": false,
+          "kicker": "Terms",
+          "title": "Terms and refunds",
+          "text": "<p>These terms are short on purpose. By paying for a course you agree to them.</p><ul><li>One payment gives you the course for as long as your enrolment is active.</li><li>Courses are for your own use. Please do not share your account.</li><li>We may update lessons to keep them correct.</li></ul>",
+          "media": "",
+          "label": "",
+          "link": "",
+          "label2": "",
+          "link2": "",
+          "flip": false,
+          "items": []
+        },
+        {
+          "id": "bf7344fc83",
+          "type": "data",
+          "source": "refundrules",
+          "hidden": false,
+          "kicker": "Refunds",
+          "title": "Refund conditions",
+          "text": "<p>You can ask for a refund from My account. A person at {name} checks every request.</p>",
+          "media": "",
+          "label": "",
+          "link": "",
+          "label2": "",
+          "link2": "",
+          "flip": false,
+          "items": []
+        },
+        {
+          "id": "b4a705ad3c",
+          "type": "text",
+          "source": "",
+          "hidden": false,
+          "kicker": "",
+          "title": "How a refund request is handled",
+          "text": "<p>A request inside the conditions is marked <b>eligible</b>. A request outside them can still be sent and is marked <b>outside policy</b>; we look at it case by case.</p><p>If we approve a full refund, your access ends, your progress is kept but locked, and any certificate you were given is revoked. You can enrol again by paying again.</p><p>A partial goodwill refund returns part of the price and your access stays. If we decline, we tell you why.</p>",
+          "media": "",
+          "label": "",
+          "link": "",
+          "label2": "",
+          "link2": "",
+          "flip": false,
+          "items": []
+        }
+      ],
+      "versions": [],
+      "saved": "0001-01-01T00:00:00Z",
+      "by": ""
+    },
+    "contact": {
+      "blocks": [
+        {
+          "id": "bef19da7d6",
+          "type": "data",
+          "source": "contactform",
+          "hidden": false,
+          "kicker": "Contact",
+          "title": "Say hello",
+          "text": "<p>Questions about a course, an order or a refund? Send us a note and we will reply by email.</p>",
+          "media": "",
+          "label": "",
+          "link": "",
+          "label2": "",
+          "link2": "",
+          "flip": false,
+          "items": []
+        }
+      ],
+      "versions": [],
+      "saved": "0001-01-01T00:00:00Z",
+      "by": ""
+    },
+    "verify": {
+      "blocks": [
+        {
+          "id": "be7b1ad9cd",
+          "type": "data",
+          "source": "verifyform",
+          "hidden": false,
+          "kicker": "Certificate",
+          "title": "Verify a certificate",
+          "text": "<p>Type the code printed on a certificate, for example BPA-XXXX-XXXX, to check that it is real.</p>",
+          "media": "",
+          "label": "",
+          "link": "",
+          "label2": "",
+          "link2": "",
+          "flip": false,
+          "items": []
+        },
+        {
+          "id": "bd36759b7d",
+          "type": "text",
+          "source": "",
+          "hidden": false,
+          "kicker": "",
+          "title": "What a certificate means",
+          "text": "<p>A certificate is issued only when a student has completed every lesson and passed every quiz in a course. If a student is refunded in full, the certificate is revoked and this page says so.</p>",
+          "media": "",
+          "label": "",
+          "link": "",
+          "label2": "",
+          "link2": "",
+          "flip": false,
+          "items": []
+        }
+      ],
+      "versions": [],
+      "saved": "0001-01-01T00:00:00Z",
+      "by": ""
+    }
+  }
+}

@@ -1,0 +1,24 @@
+<div class="su-site" data-page="AdminStudents" id="su-site-root">
+<header class="su-top">
+    <button type="button" class="su-burger" aria-label="Menu" onclick="AdminStudentsJs.openMenu()"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    <a class="su-logo" href="Admin"><svg viewBox="0 0 40 40" width="30" height="30" aria-hidden="true"><rect width="40" height="40" rx="10" fill="#1F2A37"/><path d="M8 28a12 12 0 0 1 24 0" fill="#F6D77A"/><path d="M13 28a7 7 0 0 1 14 0" fill="#C2540A"/><path d="M6 30h28" stroke="#FBF7EF" stroke-width="2.4" stroke-linecap="round"/></svg><span id="su-brand">Brightpath Academy</span><small>Staff</small></a>
+    <div class="su-who" id="su-who"></div>
+    <a class="su-tl su-tlv" href="Home" target="_blank" rel="noopener">View site</a>
+    <button type="button" class="su-tl" onclick="AdminStudentsJs.signout()">Sign out</button>
+</header>
+<div class="su-body">
+    <nav class="su-rail" id="su-rail" aria-label="Staff menu">
+        <div class="su-rail-top"><b>Menu</b><button type="button" class="su-ibtn" aria-label="Close menu" onclick="AdminStudentsJs.closeMenu()"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+        <div class="su-menu" id="su-menu"></div>
+    </nav>
+    <div class="su-scrim" id="su-scrim" onclick="AdminStudentsJs.closeMenu()"></div>
+    <main class="su-main" id="su-main"><div class="su-loading">Loading</div></main>
+</div>
+<div class="su-modal" id="su-modal" aria-hidden="true">
+    <div class="su-mbox" role="dialog" aria-modal="true" aria-labelledby="su-mtitle">
+        <div class="su-mhead"><h2 id="su-mtitle"></h2><button type="button" class="su-ibtn" aria-label="Close" onclick="AdminStudentsJs.closeModal()"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+        <div class="su-mbody" id="su-mbody"></div>
+    </div>
+</div>
+<div class="su-toast" id="su-toast" role="status" aria-live="polite"></div>
+</div>

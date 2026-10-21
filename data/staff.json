@@ -1,0 +1,113 @@
+[
+  {
+    "id": "u-maya",
+    "login": "maya",
+    "name": "Maya Okafor",
+    "title": "Instructor",
+    "hash": "pbkdf2$100000$f881f2bdc673cead5f46dbc67d129870$5c27c7b0e415f74f76c626f25635c56fa3da8371d290df108bc9332f0a447c49",
+    "admin": false,
+    "active": true,
+    "mustChange": false,
+    "providerId": "ins-maya",
+    "own": true,
+    "perms": {
+      "courses": "VE",
+      "quizzes": "VE",
+      "students": "V",
+      "enrollments": "V"
+    }
+  },
+  {
+    "id": "u-luis",
+    "login": "luis",
+    "name": "Luis Herrera",
+    "title": "Instructor",
+    "hash": "pbkdf2$100000$f881f2bdc673cead5f46dbc67d129870$5c27c7b0e415f74f76c626f25635c56fa3da8371d290df108bc9332f0a447c49",
+    "admin": false,
+    "active": true,
+    "mustChange": false,
+    "providerId": "ins-luis",
+    "own": true,
+    "perms": {
+      "courses": "VE",
+      "quizzes": "VE",
+      "students": "V",
+      "enrollments": "V"
+    }
+  },
+  {
+    "id": "u-rosa",
+    "login": "rosa",
+    "name": "Rosa Quinn",
+    "title": "Registrar",
+    "hash": "pbkdf2$100000$f881f2bdc673cead5f46dbc67d129870$5c27c7b0e415f74f76c626f25635c56fa3da8371d290df108bc9332f0a447c49",
+    "admin": false,
+    "active": true,
+    "mustChange": false,
+    "providerId": "",
+    "own": false,
+    "perms": {
+      "students": "VEX",
+      "enrollments": "VEX",
+      "orders": "V",
+      "courses": "V"
+    }
+  },
+  {
+    "id": "u-jamal",
+    "login": "jamal",
+    "name": "Jamal Bell",
+    "title": "Finance",
+    "hash": "pbkdf2$100000$f881f2bdc673cead5f46dbc67d129870$5c27c7b0e415f74f76c626f25635c56fa3da8371d290df108bc9332f0a447c49",
+    "admin": false,
+    "active": true,
+    "mustChange": false,
+    "providerId": "",
+    "own": false,
+    "perms": {
+      "orders": "VEX",
+      "refunds": "VEX",
+      "students": "V",
+      "enrollments": "V"
+    }
+  },
+  {
+    "id": "u-nina",
+    "login": "nina",
+    "name": "Nina Park",
+    "title": "Content editor",
+    "hash": "pbkdf2$100000$f881f2bdc673cead5f46dbc67d129870$5c27c7b0e415f74f76c626f25635c56fa3da8371d290df108bc9332f0a447c49",
+    "admin": false,
+    "active": true,
+    "mustChange": false,
+    "providerId": "",
+    "own": false,
+    "perms": {
+      "pages": "VEX",
+      "media": "VEX",
+      "courses": "VEX",
+      "quizzes": "VE",
+      "instructors": "VE",
+      "messages": "V"
+    }
+  },
+  {
+    "id": "u-omar",
+    "login": "omar",
+    "name": "Omar Reyes",
+    "title": "Support",
+    "hash": "pbkdf2$100000$f881f2bdc673cead5f46dbc67d129870$5c27c7b0e415f74f76c626f25635c56fa3da8371d290df108bc9332f0a447c49",
+    "admin": false,
+    "active": true,
+    "mustChange": false,
+    "providerId": "",
+    "own": false,
+    "perms": {
+      "messages": "VEX",
+      "students": "V",
+      "enrollments": "V",
+      "refunds": "V",
+      "orders": "V"
+    }
+  }
+]
