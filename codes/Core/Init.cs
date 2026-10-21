@@ -4,7 +4,7 @@ namespace OnlineSchool.Core
 {
     public static class Init
     {
-        private static readonly string[] Records = { "students", "enrollments", "orders", "refunds", "certificates", "messages", "activity", "staff" };
+        private static readonly string[] Records = { "students", "enrollments", "orders", "refunds", "certificates", "messages", "activity", "staff", "resets" };
 
         public static string Marker => Path.Combine(Store.DataDir, "initialized.txt");
 

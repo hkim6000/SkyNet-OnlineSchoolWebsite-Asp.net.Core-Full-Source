@@ -23,7 +23,7 @@ namespace OnlineSchool.Core
 
         public static Staff DemoUser => new Staff { Id = "u-demo", Login = "demo", Name = "Demo manager", Title = "Manager", Admin = true, Active = true };
 
-        private static bool Paused(string key)
+        public static bool Paused(string key)
         {
             lock (FailLock)
             {
@@ -36,7 +36,7 @@ namespace OnlineSchool.Core
             }
         }
 
-        private static void Failed(string key)
+        public static void Failed(string key)
         {
             lock (FailLock)
             {
@@ -343,6 +343,106 @@ namespace OnlineSchool.Core
         public static async Task CloseStudent(string studentId)
         {
             await Close(Store.StudentSessions, s => s.UserId == studentId);
+        }
+
+        public static async Task CloseStudentOthers(string studentId, string keep)
+        {
+            await Close(Store.StudentSessions, s => s.UserId == studentId && s.Token != keep);
+        }
+
+        private static string ResetHash(string token)
+        {
+            return Convert.ToHexString(System.Security.Cryptography.SHA256.HashData(System.Text.Encoding.UTF8.GetBytes(token))).ToLowerInvariant();
+        }
+
+        public static async Task<(string Token, Student? Who)> StudentResetLink(string email)
+        {
+            Student? s = (await Store.Rows<Student>("students")).FirstOrDefault(x => x.Email.Equals(email, StringComparison.OrdinalIgnoreCase) && x.Active);
+            if (s == null)
+            {
+                return (string.Empty, null);
+            }
+            string token = Convert.ToHexString(System.Security.Cryptography.RandomNumberGenerator.GetBytes(16)).ToLowerInvariant();
+            using (await Store.Hold())
+            {
+                List<ResetLink> list = await Store.Rows<ResetLink>("resets");
+                list.RemoveAll(r => r.Used || r.Expires < DateTime.UtcNow || r.StudentId == s.Id);
+                list.Add(new ResetLink { Hash = ResetHash(token), StudentId = s.Id, Expires = DateTime.UtcNow.AddHours(1) });
+                await Store.SaveRows("resets", list);
+            }
+            return (token, s);
+        }
+
+        public static async Task<Student?> StudentResetWho(string token)
+        {
+            string h = ResetHash(token.Trim().ToLowerInvariant());
+            ResetLink? r = (await Store.Rows<ResetLink>("resets")).FirstOrDefault(x => x.Hash == h && !x.Used && x.Expires > DateTime.UtcNow);
+            return r == null ? null : (await Store.Rows<Student>("students")).FirstOrDefault(x => x.Id == r.StudentId && x.Active);
+        }
+
+        public static async Task<(string Token, string Error)> StudentResetUse(string token, string password, string again)
+        {
+            if (password.Length < 8)
+            {
+                return (string.Empty, "Use at least 8 characters.");
+            }
+            if (password != again)
+            {
+                return (string.Empty, "The two passwords are not the same.");
+            }
+            string h = ResetHash(token.Trim().ToLowerInvariant());
+            string id = string.Empty;
+            using (await Store.Hold())
+            {
+                List<ResetLink> list = await Store.Rows<ResetLink>("resets");
+                ResetLink? r = list.FirstOrDefault(x => x.Hash == h && !x.Used && x.Expires > DateTime.UtcNow);
+                if (r == null)
+                {
+                    return (string.Empty, "This link has expired or was already used. Ask for a new one.");
+                }
+                List<Student> students = await Store.Rows<Student>("students");
+                Student? s = students.FirstOrDefault(x => x.Id == r.StudentId && x.Active);
+                if (s == null)
+                {
+                    return (string.Empty, "This link has expired or was already used. Ask for a new one.");
+                }
+                s.Hash = Access.HashPassword(password);
+                r.Used = true;
+                list.RemoveAll(x => x.Used && x != r || x.Expires < DateTime.UtcNow);
+                await Store.SaveRows("students", students);
+                await Store.SaveRows("resets", list);
+                id = s.Id;
+            }
+            await CloseStudent(id);
+            return (await Open(Store.StudentSessions, id, 24 * 14), string.Empty);
+        }
+
+        public static async Task<string> StudentChangePassword(string studentId, string current, string password, string again)
+        {
+            if (password.Length < 8)
+            {
+                return "Use at least 8 characters.";
+            }
+            if (password != again)
+            {
+                return "The two new passwords are not the same.";
+            }
+            using (await Store.Hold())
+            {
+                List<Student> students = await Store.Rows<Student>("students");
+                Student? s = students.FirstOrDefault(x => x.Id == studentId);
+                if (s == null || !Access.VerifyPassword(current, s.Hash))
+                {
+                    return "The current password is not right.";
+                }
+                if (current == password)
+                {
+                    return "Choose a password different from the current one.";
+                }
+                s.Hash = Access.HashPassword(password);
+                await Store.SaveRows("students", students);
+            }
+            return string.Empty;
         }
     }
 }

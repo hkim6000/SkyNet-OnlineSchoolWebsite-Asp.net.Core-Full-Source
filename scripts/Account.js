@@ -191,6 +191,20 @@ var AccountJs = (function () {
         return false;
     }
 
+    function password() {
+        scall('Password');
+    }
+
+    function savePassword() {
+        scall('SavePassword', [{ key: 'cur', vlu: el('ac-cur').value }, { key: 'np1', vlu: el('ac-np1').value }, { key: 'np2', vlu: el('ac-np2').value }]);
+        return false;
+    }
+
+    function passwordSaved() {
+        closeModal();
+        toast('Your password is changed.');
+    }
+
     function profileSaved() {
         closeModal();
         toast('Your profile is saved.');
@@ -256,7 +270,7 @@ var AccountJs = (function () {
         openNav: openNav,
         closeNav: closeNav,
         gone: gone,
-        signout: signout,opened: opened, closeModal: closeModal, profile: profile, saveProfile: saveProfile, profileSaved: profileSaved, receipt: receipt, refund: refund, sendRefund: sendRefund, requested: requested, withdraw: withdraw, withdrawn: withdrawn, print: print
+        signout: signout,opened: opened, closeModal: closeModal, profile: profile, saveProfile: saveProfile, profileSaved: profileSaved, password: password, savePassword: savePassword, passwordSaved: passwordSaved, receipt: receipt, refund: refund, sendRefund: sendRefund, requested: requested, withdraw: withdraw, withdrawn: withdrawn, print: print
     };
 })();
 

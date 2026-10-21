@@ -73,7 +73,7 @@ namespace OnlineSchool.codes
             List<Enrollment> enrollments = (await Store.Rows<Enrollment>("enrollments")).Where(e => e.StudentId == c.S.Id).ToList();
             SiteData site = await Store.LoadSite();
             StringBuilder sb = new StringBuilder("<div class=\"ac-page-h\"><h1>My account</h1><p>Your orders, receipts and refund requests.</p></div>");
-            sb.Append("<section class=\"ac-panel\"><div class=\"ac-phead\"><h2>Profile</h2><button type=\"button\" class=\"ac-btn ac-btn-sm ac-btn-ghost\" onclick=\"AccountJs.profile()\">Edit profile</button></div><dl class=\"ac-kv\"><dt>Name</dt><dd>" + Ui.Esc(c.S.Name) + "</dd><dt>Email</dt><dd>" + Ui.Esc(c.S.Email) + "</dd><dt>Phone</dt><dd>" + (c.S.Phone == string.Empty ? "<span class=\"ac-hint\">Not given yet</span>" : Ui.Esc(c.S.Phone)) + "</dd><dt>Member since</dt><dd>" + Ui.Day(c.S.Created) + "</dd></dl></section>");
+            sb.Append("<section class=\"ac-panel\"><div class=\"ac-phead\"><h2>Profile</h2><div class=\"ac-row\"><button type=\"button\" class=\"ac-btn ac-btn-sm ac-btn-ghost\" onclick=\"AccountJs.profile()\">Edit profile</button><button type=\"button\" class=\"ac-btn ac-btn-sm ac-btn-ghost\" onclick=\"AccountJs.password()\">Change password</button></div></div><dl class=\"ac-kv\"><dt>Name</dt><dd>" + Ui.Esc(c.S.Name) + "</dd><dt>Email</dt><dd>" + Ui.Esc(c.S.Email) + "</dd><dt>Phone</dt><dd>" + (c.S.Phone == string.Empty ? "<span class=\"ac-hint\">Not given yet</span>" : Ui.Esc(c.S.Phone)) + "</dd><dt>Member since</dt><dd>" + Ui.Day(c.S.Created) + "</dd></dl></section>");
             sb.Append("<h2 class=\"ac-h2\">Orders</h2>");
             if (orders.Count == 0)
             {
@@ -167,6 +167,46 @@ namespace OnlineSchool.codes
             }
             await Store.Log(c.S.Id, "edit own profile", name, true);
             response.ExecuteScript("AccountJs.profileSaved();");
+            return response;
+        }
+
+        public async Task<ApiResponse> Password()
+        {
+            ApiResponse response = new ApiResponse();
+            SCtx? c = await Guard(response);
+            if (c == null)
+            {
+                return response;
+            }
+            string html = "<form class=\"ac-form\" onsubmit=\"return AccountJs.savePassword()\" novalidate>"
+                + "<label class=\"ac-field\"><span>Current password</span><input type=\"password\" id=\"ac-cur\" maxlength=\"80\" autocomplete=\"current-password\"></label>"
+                + "<label class=\"ac-field\"><span>New password</span><input type=\"password\" id=\"ac-np1\" maxlength=\"80\" autocomplete=\"new-password\"></label>"
+                + "<label class=\"ac-field\"><span>New password again</span><input type=\"password\" id=\"ac-np2\" maxlength=\"80\" autocomplete=\"new-password\"><em class=\"ac-err\" id=\"ac-e-pw\"></em></label>"
+                + "<p class=\"ac-hint\">At least 8 characters. Your other sign-ins are closed when the password changes.</p>"
+                + "<div class=\"ac-acts\"><button type=\"button\" class=\"ac-btn ac-btn-ghost\" onclick=\"AccountJs.closeModal()\">Cancel</button><button type=\"submit\" class=\"ac-btn\">Change password</button></div></form>";
+            response.SetElementContents("ac-mbody", html);
+            response.ExecuteScript("AccountJs.opened('Change password');");
+            return response;
+        }
+
+        public async Task<ApiResponse> SavePassword()
+        {
+            ApiResponse response = new ApiResponse();
+            SCtx? c = await Guard(response);
+            if (c == null)
+            {
+                return response;
+            }
+            string err = await Auth.StudentChangePassword(c.S.Id, GetDataValue("cur") ?? string.Empty, GetDataValue("np1") ?? string.Empty, GetDataValue("np2") ?? string.Empty);
+            if (err != string.Empty)
+            {
+                await Store.Log(c.S.Id, "change own password", c.S.Email, false);
+                response.SetElementContents("ac-e-pw", Ui.Esc(err));
+                return response;
+            }
+            await Auth.CloseStudentOthers(c.S.Id, c.Token);
+            await Store.Log(c.S.Id, "change own password", c.S.Email, true);
+            response.ExecuteScript("AccountJs.passwordSaved();");
             return response;
         }
 

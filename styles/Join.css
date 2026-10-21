@@ -199,3 +199,5 @@ body { margin: 0; }
 .jn-tab.jn-act { background: var(--jn-paper); color: var(--jn-ink); box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12); }
 .jn-form { display: grid; gap: 16px; }
 .jn-site .jn-form h2 { font-size: 26px; }
+.jn-forgot { margin-top: -4px; font-size: 14px; text-align: center; }
+.jn-forgot a { color: var(--jn-accent); font-weight: 600; text-decoration: underline; text-underline-offset: 2px; }

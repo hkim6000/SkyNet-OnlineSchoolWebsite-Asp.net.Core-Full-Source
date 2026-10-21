@@ -226,6 +226,14 @@ namespace OnlineSchool.Models
         public DateTime Expires { get; set; }
     }
 
+    public class ResetLink
+    {
+        public string Hash { get; set; } = string.Empty;
+        public string StudentId { get; set; } = string.Empty;
+        public DateTime Expires { get; set; }
+        public bool Used { get; set; }
+    }
+
     public class MediaItem
     {
         public string Id { get; set; } = string.Empty;

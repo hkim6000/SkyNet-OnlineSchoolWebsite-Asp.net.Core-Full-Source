@@ -30,6 +30,23 @@
         <div class="jn-field"><span>Password</span><input type="password" id="jn-pass" value="{plhd_spass}" maxlength="80" autocomplete="current-password"><em class="jn-err" id="jn-e-pass"></em></div>
         <div class="jn-note jn-note-bad" id="jn-note" role="alert"></div>
         <button type="submit" class="jn-btn">Sign in</button>
+        <p class="jn-forgot"><a href="Join?mode=forgot" onclick="JoinJs.mode('forgot'); return false;">Forgot your password?</a></p>
+    </form>
+    <form id="jn-form-forgot" class="jn-form" hidden onsubmit="return JoinJs.forgot()" novalidate>
+        <h2>Reset your password</h2>
+        <p class="jn-hint">Type the email of your account. We will send it a link to choose a new password.</p>
+        <div class="jn-field"><span>Email</span><input type="email" id="jn-femail" maxlength="80" autocomplete="email"><em class="jn-err" id="jn-e-femail"></em></div>
+        <div class="jn-note" id="jn-fnote" role="status"></div>
+        <button type="submit" class="jn-btn">Send the link</button>
+        <p class="jn-forgot"><a href="Join" onclick="JoinJs.mode('in'); return false;">Back to sign in</a></p>
+    </form>
+    <form id="jn-form-reset" class="jn-form" hidden onsubmit="return JoinJs.reset()" novalidate>
+        <h2>Choose a new password</h2>
+        {plhd_resetnote}
+        <div class="jn-field"><span>New password</span><input type="password" id="jn-rpass1" maxlength="80" autocomplete="new-password"><em class="jn-err" id="jn-e-rpass"></em></div>
+        <div class="jn-field"><span>New password again</span><input type="password" id="jn-rpass2" maxlength="80" autocomplete="new-password"></div>
+        <button type="submit" class="jn-btn">Save and sign in</button>
+        <p class="jn-forgot"><a href="Join?mode=forgot" onclick="JoinJs.mode('forgot'); return false;">Ask for a new link</a></p>
     </form>
     <form id="jn-form-new" class="jn-form" hidden onsubmit="return JoinJs.signUp()" novalidate>
         <h2>Create your account</h2>
@@ -57,6 +74,7 @@
 </div>
 </div>
 <input type="hidden" id="jn-mode" value="{plhd_mode}">
+<input type="hidden" id="jn-reset" value="{plhd_reset}">
 </section>
 </main>
 <footer class="jn-foot">
