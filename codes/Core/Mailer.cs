@@ -3,7 +3,7 @@ using System.Net.Mail;
 
 namespace OnlineSchool.Core
 {
-    public static class Mail
+    public static class Mailer
     {
         public static string Server => Store.ConfigValue("app.mail.server");
 

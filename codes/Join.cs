@@ -83,7 +83,7 @@ namespace OnlineSchool.codes
             }
             response.SetElementContents("jn-e-femail", string.Empty);
             SiteData site = await Store.LoadSite();
-            if (!Mail.Ready)
+            if (!Mailer.Ready)
             {
                 response.SetElementContents("jn-fnote", "Password reset by email is not set up on this site yet. Please contact us at " + Ui.Esc(site.Email) + (site.Phone.Length > 0 ? " or " + Ui.Esc(site.Phone) : string.Empty) + " and we will reset it for you.");
                 return response;
@@ -99,7 +99,7 @@ namespace OnlineSchool.codes
             {
                 string link = Local.BaseUrl() + "/Join?reset=" + token;
                 string text = "Hello " + who.Name + ",\n\nSomeone asked to reset the password of your " + site.Brand + " account. Open this link within one hour to choose a new password:\n\n" + link + "\n\nIf that was not you, ignore this email; your password stays as it is.\n\n" + site.Brand;
-                string err = await Mail.Send(who.Email, site.Brand + ": reset your password", text);
+                string err = await Mailer.Send(who.Email, site.Brand + ": reset your password", text);
                 await Store.Log(who.Id, "password reset link", err == string.Empty ? who.Email : who.Email + " · " + err, err == string.Empty);
                 if (err != string.Empty)
                 {
